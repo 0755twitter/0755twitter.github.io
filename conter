@@ -1,0 +1,111 @@
+html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <title>深圳约炮资源（已验证）</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: inherit;
+            line-height: 1.5em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            line-height: inherit;
+        }
+
+        html {
+            font-size: 5vw;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        ::placeholder {
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3>深圳约炮资源，点击查看详情</h3>
+        <div style="width: 100%; box-sizing: border-box; flex: 1 1 0%; overflow: auto;">
+                   
+                    <a href="https://lucy0755.github.io/luohu.html" style="width: 100%; display: block; padding: 1em; box-sizing: border-box; border-bottom: 1px solid rgb(204, 204, 204);">
+                        <h3 style="text-align: justify; letter-spacing: 2px; margin-bottom: 0.5em;">点击查看罗湖约炮资源</h3>
+</a>      
+       <a href="https://lucy0755.github.io/longgang.html" style="width: 100%; display: block; padding: 1em; box-sizing: border-box; border-bottom: 1px solid rgb(204, 204, 204);">
+                        <h3 style="text-align: justify; letter-spacing: 2px; margin-bottom: 0.5em;">点击查看龙岗约炮资源</h3>
+</a>                 <a href="https://lucy0755.github.io/nfutian.html" style="width: 100%; display: block; padding: 1em; box-sizing: border-box; border-bottom: 1px solid rgb(204, 204, 204);">
+                        <h3 style="text-align: justify; letter-spacing: 2px; margin-bottom: 0.5em;">点击查看福田约炮资源</h3>
+</a>                 <a href="https://lucy0755.github.io/baoan.html" style="width: 100%; display: block; padding: 1em; box-sizing: border-box; border-bottom: 1px solid rgb(204, 204, 204);">
+                        <h3 style="text-align: justify; letter-spacing: 2px; margin-bottom: 0.5em;">点击查看宝安约炮资源</h3>
+</a>                 <a href="https://lucy0755.github.io/nanshan.html" style="width: 100%; display: block; padding: 1em; box-sizing: border-box; border-bottom: 1px solid rgb(204, 204, 204);">
+                        <h3 style="text-align: justify; letter-spacing: 2px; margin-bottom: 0.5em;">点击查看南山约炮资源</h3>
+</a>                 <a href="https://lucy0755.github.io/longhua.html" style="width: 100%; display: block; padding: 1em; box-sizing: border-box; border-bottom: 1px solid rgb(204, 204, 204);">
+                        <h3 style="text-align: justify; letter-spacing: 2px; margin-bottom: 0.5em;">点击查看龙华约炮资源</h3>
+</a>
+        </div>
+        <div style="width: 100%; box-sizing: border-box; padding: 0.5em; display: flex; flex-direction: row; justify-content: center; align-items: center; border-top: 1px solid rgb(204, 204, 204);">
+            <button id="pre" type="button" style="width: 1.5em; height: auto; display: block;">
+                <svg style="display: block;" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M319.64 512.016l336.016-336.008 45.248 45.248L364.896 557.28z" fill="#000000"></path>
+                    <path d="M365.216 466.464l339.976 339.968-45.256 45.256-339.976-339.976z" fill="#000000"></path>
+                </svg>
+            </button>
+            <div style="margin: 0px 1em; flex: 1 1 0%; text-align: center;">
+                深圳约炮资源，点击上面地区查看详情
+            </div>
+            <button id="next" type="button" style="width: 1.5em; height: auto; display: block;">
+                <svg style="display: block;" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M658.56 557.392L322.536 221.384l45.248-45.256 336.016 336.008z" fill="#000000"></path>
+                    <path d="M704.088 512.2L364.12 852.16l-45.256-45.248 339.976-339.976z" fill="#000000"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var images = document.getElementsByClassName("image")
+                , form = document.getElementById("form")
+                , pre = document.getElementById("pre")
+                , next = document.getElementById("next")
+                , page = 1;
+
+            for (var i = 0; i < images.length; ++i) {
+                images[i].style.backgroundImage = "url(" + images[i].getAttribute("src") + ")";
+            }
+
+            form.onsubmit = function (e) {
+                e.preventDefault();
+                var keywords = document.getElementById("keywords").value;
+                document.getElementById("keywords").value = "";
+                location.href = "/?page=1" + "&keywords=" + keywords;
+            };
+
+            pre.onclick = function () {
+                if (page > 1) {
+                    location.href = "/?page=" + (page - 1) + "&keywords=" + document.getElementById("keywords").value;
+                }
+            };
+
+            next.onclick = function () {
+                location.href = "/?page=" + (page + 1) + "&keywords=" + document.getElementById("keywords").value;
+            };
+        };
+    </script>
+</body>
+</html>
